@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Adeeba Khanam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursor-trail"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">AK</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span>Available for work</span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="grid-lines"></div>
+      <div class="noise-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <span class="mono">CSE Student</span>
+        <span class="separator">×</span>
+        <span class="mono">Tech Enthusiast</span>
+      </div>
+      <h1 class="hero-name reveal">
+        <span class="line">Adeeba</span>
+        <span class="line italic">khanam</span>
+      </h1>
+      <p class="hero-desc reveal">
+        A passionate CSE student at <em>Stanley college of engineering</em>,building real-world projects with <em>code and creativity</em>.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn-primary">View my work</a>
+        <a href="#contact" class="btn-ghost">Let's talk →</a>
+      </div>
+    </div>
+
+    <div class="hero-side">
+      <div class="hero-marquee">
+        <div class="marquee-track">
+          <span>React</span><span>·</span>
+          <span>Node.js</span><span>·</span>
+          <span>PostgreSQL</span><span>·</span>
+          <span>TypeScript</span><span>·</span>
+          <span>Docker</span><span>·</span>
+          <span>AWS</span><span>·</span>
+          <span>GraphQL</span><span>·</span>
+          <span>Redis</span><span>·</span>
+          <span>React</span><span>·</span>
+          <span>Node.js</span><span>·</span>
+          <span>PostgreSQL</span><span>·</span>
+          <span>TypeScript</span><span>·</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span class="mono">scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label mono">
+        <span>01</span>
+        <span>About</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap reveal">
+          <div class="about-image">
+            <div class="image-placeholder">
+              <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="80" r="40" fill="var(--accent)"/>
+                <ellipse cx="100" cy="175" rx="65" ry="45" fill="var(--accent)"/>
+              </svg>
+            </div>
+            <div class="image-tag mono">Based in Hyderabad, India</div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2 class="reveal">Learning and Building,<br/><em>one project at a time.</em></h2>
+          <p class="reveal">I'm a 2nd year Computer Science Engineering student at Stanley college of Engineering and Technology for Women, Hyderabad. I care deeply about clean architecture, developer experience, and shipping products that genuinely help people.</p>
+          <p class="reveal">I love exploring web development, solving problems, and building projects that make a difference. Always eager to learn new technologies.</p>
+          <div class="about-stats reveal">
+            <div class="stat">
+              <span class="stat-num">5+</span>
+              <span class="stat-label mono">Years exp.</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">40+</span>
+              <span class="stat-label mono">Projects shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">12</span>
+              <span class="stat-label mono">Open source repos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label mono">
+        <span>02</span>
+        <span>Skills</span>
+      </div>
+      <h2 class="section-title reveal">My <em>toolkit</em></h2>
+      <div class="skills-grid" id="skills-grid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label mono">
+        <span>03</span>
+        <span>Work</span>
+      </div>
+      <h2 class="section-title reveal">Selected <em>projects</em></h2>
+
+      <div class="projects-list" id="projects-list">
+        <div class="loading-state">
+          <div class="spinner"></div>
+          <span class="mono">Loading projects…</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label mono">
+        <span>04</span>
+        <span>Contact</span>
+      </div>
+      <div class="contact-inner">
+        <h2 class="contact-heading reveal">
+          Let's build<br/><em>something great.</em>
+        </h2>
+        <div class="contact-body reveal">
+          <p>Have a project in mind? I'm open to freelance, full-time, and collaboration opportunities. Drop me a line and let's talk.</p>
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="mono">Name</label>
+                <input type="text" id="name" placeholder="Jane Smith" required />
+              </div>
+              <div class="form-group">
+                <label for="email" class="mono">Email</label>
+                <input type="email" id="email" placeholder="jane@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message" class="mono">Message</label>
+              <textarea id="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" id="submit-btn">
+              <span>Send message</span>
+              <span class="btn-arrow">→</span>
+            </button>
+            <div class="form-success" id="form-success">
+              ✓ Message sent! I'll be in touch soon.
+            </div>
+          </form>
+        </div>
+        <div class="contact-links reveal">
+          <a href="https://github.com" target="_blank" class="contact-link">
+            <span class="mono">GitHub</span>
+            <span>↗</span>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="contact-link">
+            <span class="mono">LinkedIn</span>
+            <span>↗</span>
+          </a>
+          <a href="mailto:alex@example.com" class="contact-link">
+            <span class="mono">Email</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <span class="mono">© 2026 Adeeba Khanam</span>
+      <span class="mono">Built with Node.js + PostgreSQL</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
